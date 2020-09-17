@@ -1,4 +1,6 @@
 # Logs
+.*
+
 logs
 *.log
 npm-debug.log*
@@ -29,7 +31,7 @@ coverage
 .grunt
 
 # Bower dependency directory (https://bower.io/)
-bower_components
+
 
 # node-waf configuration
 .lock-wscript
@@ -102,3 +104,4 @@ dist
 
 # TernJS port file
 .tern-port
+.*
