@@ -34,9 +34,10 @@ var init = function (window) {
         
 
         // TODO 3 / 7 : Call the drawCircle() function 
-    var loopsCompleted = 0;
-    for (loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++){
-        drawCircle(); }
+ 
+    for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++){
+        drawCircle(); 
+    }
     
 
 
@@ -48,20 +49,16 @@ var init = function (window) {
         This Function is called 60 times/second producing 60 frames/second.
         In each frame, for every circle, it should redraw that circle
         and check to see if it has drifted off the screen.         
-        */ var eachCircle = 0
-        function update() {
-       
-      for (eachCircle = 0; eachCircle < circles.length; eachCircle++)
-      {
-         
-        physikz.updatePosition(eachCircle);
-          game.checkCirclePosition(eachCircle);
-      }
+        */ 
+    function update() {
+        for (var eachCircle = 0; eachCircle < circles.length; eachCircle++){ 
+         // you want to update every circle's position down below, how can you do that?
+            
+         physikz.updatePosition(circles[eachCircle]);
+            game.checkCirclePosition(circles[eachCircle]);
+        } 
     
     }
-
-
-
 
 
             // TODO 4 : Update the circle's position //
